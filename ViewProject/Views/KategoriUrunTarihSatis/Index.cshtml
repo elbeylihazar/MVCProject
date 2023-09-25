@@ -1,0 +1,45 @@
+﻿
+@model List<KategoriUrunTarihSatisModel>
+
+<h1>Kategori Tarih Ürün Satış Raporu</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Ürün Adı</th>
+            <th>Ürün ID</th>
+            <th>Yıl</th>
+            <th>Ay</th>
+            <th>Satılan Miktar</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var veri in Model)
+        {
+            <tr>
+                <td>@veri.UrunAdi</td>
+                <td>@veri.UrunID</td>
+                <td>@veri.Yil</td>
+                <td>@veri.Ay</td>
+                <td>@veri.SatilanMiktar</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
